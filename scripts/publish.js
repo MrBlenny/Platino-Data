@@ -9,7 +9,8 @@ const parseFolder = (folderPath) => {
     // This will parse a folder with front matter
     const parseFile = (path) => fs.readFileAsync(path, 'utf8').then((data) => {
         const content = fm(data);
-        content.id = getFileName(path);
+        content.attributes.id = getFileName(path);
+        delete content.frontmatter;
         return content;
     });
     const parseFiles = (files) => Promise.map(files, (fileName) => parseFile(folderPath+'/'+fileName));
