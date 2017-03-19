@@ -3,7 +3,8 @@ const fs = Promise.promisifyAll(require('fs'));
 const fm = require('front-matter');
 const mkdirp = require('mkdirp');
 const rimraf = require('rimraf');
-
+const MarkdownIt = require('markdown-it');
+const md = new MarkdownIt();
 
 const parseFolder = (folderPath) => {
 
@@ -11,7 +12,7 @@ const parseFolder = (folderPath) => {
     const parseFile = (path) => fs.readFileAsync(path, 'utf8').then((data) => {
         const content = fm(data);
         content.attributes.id = getFileName(path);
-        content.attributes.body = content.body;
+        content.attributes.body = md.render(content.body);
         return content.attributes;
     })
 
