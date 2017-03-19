@@ -10,8 +10,8 @@ const parseFolder = (folderPath) => {
     const parseFile = (path) => fs.readFileAsync(path, 'utf8').then((data) => {
         const content = fm(data);
         content.attributes.id = getFileName(path);
-        delete content.frontmatter;
-        return content;
+        content.attributes.body = content.body;
+        return content.attributes;
     });
     const parseFiles = (files) => Promise.map(files, (fileName) => parseFile(folderPath+'/'+fileName));
     return fs.readdirAsync(folderPath).then(parseFiles);
