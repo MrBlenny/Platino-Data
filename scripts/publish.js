@@ -26,8 +26,14 @@ const getFileName = (fullPath) => {
 };
 
 const outputFolder = (path, content) => {
+    const summaryWithoutBody = content.map(item => {
+      const itemCopy = Object.assign({}, item);
+      delete itemCopy.body;
+      return itemCopy;
+    })
+
     // Output summary
-    fs.writeFile(`${path}.json`, JSON.stringify(content));
+    fs.writeFile(`${path}.json`, JSON.stringify(summaryWithoutBody));
 
     // Output each file
     content.forEach(file => {
