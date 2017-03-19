@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/MrBlenny/platino-data/issues"
   },
-  "homepage": "https://github.com/MrBlenny/platino-data#readme"
+  "homepage": "https://github.com/MrBlenny/platino-data#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "front-matter": "^2.1.2",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.6.1"
+  }
 }
