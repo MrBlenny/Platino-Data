@@ -6,13 +6,15 @@ const rimraf = require('rimraf');
 
 
 const parseFolder = (folderPath) => {
+
     // This will parse a folder with front matter
     const parseFile = (path) => fs.readFileAsync(path, 'utf8').then((data) => {
         const content = fm(data);
         content.attributes.id = getFileName(path);
         content.attributes.body = content.body;
         return content.attributes;
-    });
+    })
+
     const parseFiles = (files) => Promise.map(files, (fileName) => parseFile(folderPath+'/'+fileName));
     return fs.readdirAsync(folderPath).then(parseFiles);
 };
@@ -23,19 +25,25 @@ const getFileName = (fullPath) => {
     return name;
 };
 
-const outputFolderSummary = (path, parsedContent) => {
-    fs.writeFile(path, JSON.stringify(parsedContent));
+const outputFolder = (path, content) => {
+    // Output summary
+    fs.writeFile(`${path}.json`, JSON.stringify(content));
+
+    // Output each file
+    content.forEach(file => {
+      fs.writeFile(`${path}/${file.id}.json`, JSON.stringify(file));
+    });
 };
 
 // Remove old output
 rimraf('./output', () => {
     // Create folders
     mkdirp('./output');
-//    mkdirp('./output/projects');
-//    mkdirp('./output/news');
+    mkdirp('./output/projects');
+    mkdirp('./output/news');
     // Parse folders
-    parseFolder('./src/news').then(items => outputFolderSummary('./output/news.json', items));
-    parseFolder('./src/projects').then(items => outputFolderSummary('./output/projects.json', items));
+    parseFolder('./src/news').then(items => outputFolder('./output/news', items));
+    parseFolder('./src/projects').then(items => outputFolder('./output/projects', items));
 });
 
 
