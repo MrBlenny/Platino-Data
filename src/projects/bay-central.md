@@ -1,5 +1,5 @@
 ---
-name: 
+name: Bay Central, Neutral Bay
 completed: 
 status: 1 Luxury Penthouse Remaining
 address: 

@@ -26,10 +26,13 @@ const getFileName = (fullPath) => {
     return name;
 };
 
-const outputFolder = (path, content) => {
+const outputProjectFolder = (path, content) => {
     const summaryWithoutBody = content.map(item => {
       const itemCopy = Object.assign({}, item);
+      // Delete the body
       delete itemCopy.body;
+            // Only keep one image
+      itemCopy.images = [itemCopy.images[0]];
       return itemCopy;
     })
 
@@ -49,8 +52,8 @@ rimraf('./output', () => {
     mkdirp('./output/projects');
     mkdirp('./output/news');
     // Parse folders
-    parseFolder('./src/news').then(items => outputFolder('./output/news', items));
-    parseFolder('./src/projects').then(items => outputFolder('./output/projects', items));
+//    parseFolder('./src/news').then(items => outputFolder('./output/news', items));
+    parseFolder('./src/projects').then(items => outputProjectFolder('./output/projects', items));
 });
 
 
