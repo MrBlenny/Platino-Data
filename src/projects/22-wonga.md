@@ -10,13 +10,13 @@ logo:
 
 These two houses located on a steeply sloping site in Cremotre have been individually designed to fit in with the environment and take advantage of spectacular, views over Willoughby Bay. They feature stunning timber and stone finishes, and expansive open plan living areas opening onto North facing decks
 
-![../images/w4a-wonga/outside.jpg](22 Wonga Rd - Outside)
-![../images/w4a-wonga/bedroom.jpg](22 Wonga Rd - Bedroom)
-![../images/w4a-wonga/lounge.jpg](22 Wonga Rd - Lounge)
-![../images/w4a-wonga/balcony.jpg](22 Wonga Rd - Balcony)
-![../images/w4a-wonga/kitchen.jpg](22 Wonga Rd - Kitchen)
-![../images/w4a-wonga/living.jpg](22 Wonga Rd - Living)
-![../images/w4a-wonga/balcony-3.jpg](22 Wonga Rd - Balcony)
-![../images/w4a-wonga/living-2.jpg](22 Wonga Rd - Living)
-![../images/w4a-wonga/balcony-2.jpg](22 Wonga Rd - Balcony)
-![../images/w4a-wonga/kitchen-2.jpg](22 Wonga Rd - Kitchen)
+![22 Wonga Rd - Outside](../images/22-wonga/outside.jpg)
+![22 Wonga Rd - Bedroom](../images/22-wonga/bedroom.jpg)
+![22 Wonga Rd - Lounge](../images/22-wonga/lounge.jpg)
+![22 Wonga Rd - Balcony](../images/22-wonga/balcony.jpg)
+![22 Wonga Rd - Kitchen](../images/22-wonga/kitchen.jpg)
+![22 Wonga Rd - Living](../images/22-wonga/living.jpg)
+![22 Wonga Rd - Balcony](../images/22-wonga/balcony-3.jpg)
+![22 Wonga Rd - Living](../images/22-wonga/living-2.jpg)
+![22 Wonga Rd - Balcony](../images/22-wonga/balcony-2.jpg)
+![22 Wonga Rd - Kitchen](../images/22-wonga/kitchen-2.jpg)
