@@ -5,14 +5,22 @@ status: Sold Out
 address: 9 Wonga Rd, Cremorne, Sydney, NSW
 website: 
 shortDescription: 2 Enormous Apartments
-logo: 
+logo:
+images:
+  - src: projects/9-wonga/9-Wonga-4.jpg
+    name: 1    
+  - src: projects/9-wonga/9-Wonga-11.jpg
+    name: 3
+  - src: projects/9-wonga/9-Wonga-21.jpg
+    name: 4    
+  - src: projects/9-wonga/9-Wonga-31.jpg
+    name: 5    
+  - src: projects/9-wonga/9-Wonga-41.jpg
+    name: 6    
+  - src: projects/9-wonga/9-Wonga-51.jpg
+    name: 7    
+  - src: projects/9-wonga/9-Wonga-61.jpg
+    name: 8  
 ---
 
 Set in an exclusive, tranquil enclave in Cremorne this grand duplex has a spectacular views over the moored boats and Primrose Park. Each Apartment has a separate entrance and is served by its own private lift. Open plan living areas flowing onto North facing decks.
-![../images/9-wonga/9-Wonga-4.jpg](Side)
-![../images/9-wonga/9-Wonga-11.jpg](Side)
-![../images/9-wonga/9-Wonga-21.jpg](Side)
-![../images/9-wonga/9-Wonga-31.jpg](Side)
-![../images/9-wonga/9-Wonga-41.jpg](Side)
-![../images/9-wonga/9-Wonga-51.jpg](Side)
-![../images/9-wonga/9-Wonga-61.jpg](Side)

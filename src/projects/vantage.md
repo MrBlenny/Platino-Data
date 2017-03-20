@@ -5,4 +5,20 @@ status: Now Selling
 address: 229 Miller Street, North Sydney NSW, 2060
 website: http://www.vantageresidences.com.au/
 shortDescription: 101 Luxury Apartments
+logo: projects/vantage/logo.jpg
+images:
+  - src: projects/vantage/outer.jpg
+    name: Outside  
+  - src: projects/vantage/living.jpg
+    name: Living Room
+  - src: projects/vantage/lobby.jpg
+    name: Lobby  
+  - src: projects/vantage/lane.jpg
+    name: Lane
+  - src: projects/vantage/lounge.jpg
+    name: Lounge  
+  - src: projects/vantage/view.jpg
+    name: View
 ---
+
+Connect with the best of cosmopolitan North Sydney life where major revitalisation is bringing new colour, vibrancy and growth to its residential CBD heart. Enjoy city and harbour views, with the game-changing new Sydney Metro stop at your door. It all comes together at Vantage Residences.

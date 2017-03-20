@@ -5,9 +5,25 @@ status: Now Selling
 address: 260 Victoria Avenue, Chatswood, NSW, 2067
 website: http://www.chatswoodplace.com.au/
 shortDescription: 226 Luxury Apartments
+logo: projects/chatswood-place/logo.jpg
+images:
+  - src: projects/chatswood-place/outer.jpg
+    name: Outer 
+  - src: projects/chatswood-place/garden.jpg
+    name: Living  
+  - src: projects/chatswood-place/shops.jpg
+    name: Shops
+  - src: projects/chatswood-place/balcony.jpg
+    name: Balcony  
+  - src: projects/chatswood-place/side.jpg
+    name: Side
+  - src: projects/chatswood-place/heritage.jpg
+    name: Heritage  
+  - src: projects/chatswood-place/lounge.jpg
+    name: Lounge
+  - src: projects/chatswood-place/pool.jpg
+    name: Pool  
 ---
-
-## Some markdown
 
 Discover Chatswood’s newest neighbourhood with premium new apartments at that perfect juncture between city and suburb.  Outside, Chatswood Place is unmistakably cosmopolitan.  Inside it is a sanctuary.  Expansive residents-only gardens flow through the family of low-rise buildings in a glorious flush of green.
 
