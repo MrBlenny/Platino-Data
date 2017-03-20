@@ -7,13 +7,13 @@ website:
 shortDescription: Boutique Apartments
 logo: 
 images:
-  - src: projects/orbit-waterloo-place/balcony.jpg
+  - src: projects/orbit-waterloo/balcony.jpg
     name: Balcony
-  - src: projects/orbit-waterloo-place/outside.jpg
+  - src: projects/orbit-waterloo/outside.jpg
     name: Outside 
-  - src: projects/orbit-waterloo-place/living.jpg
+  - src: projects/orbit-waterloo/living.jpg
     name: Living Room
-  - src: projects/orbit-waterloo-place/living-2.jpg
+  - src: projects/orbit-waterloo/living-2.jpg
     name: Living Room
 ---
 
