@@ -7,7 +7,6 @@ const MarkdownIt = require('markdown-it');
 const md = new MarkdownIt();
 
 const parseFolder = (folderPath) => {
-
     // This will parse a folder with front matter
     const parseFile = (path) => fs.readFileAsync(path, 'utf8').then((data) => {
         const content = fm(data);
@@ -31,8 +30,25 @@ const outputProjectFolder = (path, content) => {
       const itemCopy = Object.assign({}, item);
       // Delete the body
       delete itemCopy.body;
-            // Only keep one image
+      // Only keep one image
       itemCopy.images = [itemCopy.images[0]];
+      return itemCopy;
+    })
+
+    // Output summary
+    fs.writeFile(`${path}.json`, JSON.stringify(summaryWithoutBody));
+
+    // Output each file
+    content.forEach(file => {
+      fs.writeFile(`${path}/${file.id}.json`, JSON.stringify(file));
+    });
+};
+
+const outputNewsFolder = (path, content) => {
+    const summaryWithoutBody = content.map(item => {
+      const itemCopy = Object.assign({}, item);
+      // Delete the body
+      delete itemCopy.body;
       return itemCopy;
     })
 
@@ -52,7 +68,7 @@ rimraf('./output', () => {
     mkdirp('./output/projects');
     mkdirp('./output/news');
     // Parse folders
-//    parseFolder('./src/news').then(items => outputFolder('./output/news', items));
+    parseFolder('./src/news').then(items => outputNewsFolder('./output/news', items));
     parseFolder('./src/projects').then(items => outputProjectFolder('./output/projects', items));
 });
 

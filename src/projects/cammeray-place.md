@@ -21,4 +21,4 @@ images:
     name: Bedroom
 ---
 
-This elegant mixed use development of 36 apartments at the the Northern end of Cammeray Village captures all-day sunlight in winter, refreshing north-easterly breezes in summer and has sweeping views towards Nortrhbridge. Common facilities include a roof top pool, gym and roofgardens. These luxurious residences have set a new standard for convenient living on the Lower North Shore.![../images/9-wonga/9-Wonga-4.jpg](Side)
+This elegant mixed use development of 36 apartments at the the Northern end of Cammeray Village captures all-day sunlight in winter, refreshing north-easterly breezes in summer and has sweeping views towards Nortrhbridge. Common facilities include a roof top pool, gym and roofgardens. These luxurious residences have set a new standard for convenient living on the Lower North Shore.
